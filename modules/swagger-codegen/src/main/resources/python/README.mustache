@@ -61,6 +61,7 @@ from pprint import pprint
 {{#apiInfo}}{{#apis}}{{#-first}}{{#operations}}{{#operation}}{{#-first}}{{#hasAuthMethods}}{{#authMethods}}{{#isBasic}}
 # Configure HTTP basic authorization: {{{name}}}
 configuration = {{{packageName}}}.Configuration()
+configuration.host = 'YOUR_HOST'
 configuration.username = 'YOUR_USERNAME'
 configuration.password = 'YOUR_PASSWORD'{{/isBasic}}{{#isApiKey}}
 # Configure API key authorization: {{{name}}}
